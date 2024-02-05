@@ -69,7 +69,7 @@ const App = () => {
 
 <Button
         onPress={() => kattintas()}
-        title="Keresés"
+        title="KeresÃ©s"
       />
       <FlatList
           data={talalat}
