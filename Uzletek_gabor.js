@@ -6,7 +6,7 @@ const App = () => {
   const [isLoading, setLoading] = useState(true);
   const [data, setData] = useState([]);
 
-  const getMovies = async () => {
+  const getUzletek = async () => {
     try {
       const response = await fetch(Ipcim.Ipcim+'uzlet');
       const json = await response.json();
@@ -19,7 +19,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    getMovies();
+    getUzletek();
   }, []);
 
   return (
