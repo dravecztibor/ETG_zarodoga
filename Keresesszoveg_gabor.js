@@ -58,7 +58,7 @@ const App = () => {
         defaultValue={text}
       />
 
-      <Button title='Keresés' onPress={()=> keresfuggveny()} />
+      <Button title='KeresÃ©s' onPress={()=> keresfuggveny()} />
       {isLoading ? (
         null
       ) : (
