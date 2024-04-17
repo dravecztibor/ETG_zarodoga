@@ -72,10 +72,10 @@ function Root ({navigation}){
       <Drawer.Screen name="Felvitel" component={Felvitel} />
 
       {/*Gábor*/}
-      <Drawer.Screen name="Uzletek_G" component={Uzletek_gabor} />   
-      <Drawer.Screen name="Lenyilo_G" component={Lenyilo_gabor} /> 
-      <Drawer.Screen name="Kozosscreen_G" component={Kozosscreen_gabor} />
-      <Drawer.Screen name="Keresesszoveg_G" component={Keresesszoveg_gabor} />
+      <Drawer.Screen name="Üzletek" component={Uzletek_gabor} />   
+      <Drawer.Screen name="Kategóriák" component={Lenyilo_gabor} /> 
+      
+      <Drawer.Screen name="Keresés" component={Keresesszoveg_gabor} />
       {/*<Drawer.Screen name="Keresés" component={Keresszoveg} />*/}
       {/*<Drawer.Screen name="Ételek" component={Etelek} />*/}
       {/*<Drawer.Screen name="Ételtípusok" component={Eteltipusok} />*/}

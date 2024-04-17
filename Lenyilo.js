@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {ActivityIndicator, FlatList, Text, View} from 'react-native';
+import {StyleSheet, ActivityIndicator, FlatList, Text, View} from 'react-native';
 
 const App = () => {
   const [isLoading, setLoading] = useState(true);

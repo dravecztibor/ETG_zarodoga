@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {ActivityIndicator, FlatList, Text, View, Button, TextInput} from 'react-native';
+import {StyleSheet, ActivityIndicator, FlatList, Text, View, Button, TextInput} from 'react-native';
 import Ipcim from './Ipcim';
+import { BorderlessButton } from 'react-native-gesture-handler';
 
 const App = () => {
   const [isLoading, setLoading] = useState(true);
@@ -53,12 +54,12 @@ const App = () => {
     <View style={{flex: 1, padding: 24}}>
         <TextInput
         style={{height: 40}}
-        placeholder="Type here to translate!"
+        placeholder="Írja be a várost ahol keresni szeretne."
         onChangeText={newText => setText(newText)}
         defaultValue={text}
       />
 
-      <Button title='Keresés' onPress={()=> keresfuggveny()} />
+      <Button id="Keresesgomb" title='Keresés' style={{}} onPress={()=> keresfuggveny()} />
       {isLoading ? (
         null
       ) : (
@@ -80,5 +81,8 @@ const App = () => {
     </View>
   );
 };
+const styles = StyleSheet.create({
 
+
+})
 export default App;
